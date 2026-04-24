@@ -62,7 +62,7 @@ scripts/       仓库检查脚本
 
 ## 当前进度与入口
 
-- 第一期开篇方向：线性回归与温度-高程关系。
+- 第一期开篇方向：回归分析能解决什么地学问题。
 - 第一期资料入口：[episodes/01-linear-regression](episodes/01-linear-regression/)
 - 写作模板入口：[templates](templates/)
 
