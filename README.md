@@ -60,7 +60,14 @@ scripts/       仓库检查脚本
 
 本项目不编造引用、数据集、阈值、数值结果或性能比较。需要来源但尚未补充的说法会标记为 `[NEEDS SOURCE]`，并在正式发布前处理。
 
-## 当前进度
+## 当前进度与入口
 
-- 设计文档：[GeoAI 算法连载设计](docs/superpowers/specs/2026-04-24-geoai-series-design.md)
-- 第一期开篇方向：线性回归与温度-高程关系
+- 第一期开篇方向：线性回归与温度-高程关系。
+- 第一期资料入口：[episodes/01-linear-regression](episodes/01-linear-regression/)
+- 写作模板入口：[templates](templates/)
+
+## 使用方式
+
+如果你是读者，可以从 `episodes/` 目录按期阅读，也可以从 `algorithms/` 或 `tasks/` 按主题查找。
+
+如果你想复用或扩展内容，建议先查看每一期的 `index.md`、`notebook.ipynb` 和 `references.md`。公众号发布版会保存在对应期目的 `wechat.md`。
