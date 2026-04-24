@@ -4,23 +4,25 @@
 
 | 名称 | 来源 | 许可证或使用说明 | 用途 |
 | --- | --- | --- | --- |
-| 示例温度-高程数据 | 本仓库 notebook 内构造的小型教学数据 | 仅用于演示 | 线性回归拟合与作图 |
+| 示例温度-高程数据 | 本仓库 notebook 内构造的小型教学数据 | 仅用于演示 | 线性回归拟合、预测与作图 |
 
-## 本期引用的文献
+## 本期引用的资料
 
-| 文献 | 用途 | 备注 |
+| 资料 | 用途 | 链接 |
 | --- | --- | --- |
+| NOAA National Weather Service Glossary: Lapse Rate | 说明 lapse rate、environmental lapse rate 和 dry adiabatic lapse rate 的气象学含义 | https://forecast.weather.gov/glossary.php?word=lapse+rate |
+| scikit-learn `LinearRegression` documentation | 说明 `LinearRegression` 是 ordinary least squares linear regression，并最小化残差平方和 | https://sklearn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html |
+| Penn State STAT 501: Regression Methods | 作为后续补充简单线性回归、模型评估和回归假设的教学资料 | https://online.stat.psu.edu/stat501/book |
 
 ## 本期使用的软件
 
 | 软件包 | 用途 | 备注 |
 | --- | --- | --- |
-| Python | 运行示例代码 | 版本在 notebook 中记录 |
-| pandas | 表格数据处理 | 计划使用 |
-| scikit-learn | 线性回归拟合 | 计划使用 |
-| matplotlib | 作图 | 计划使用 |
+| Python | 运行示例代码 | 使用本地 Python 3 环境 |
+| pandas | 表格数据处理 | 构造和查看示例数据 |
+| scikit-learn | 线性回归拟合 | 使用 `sklearn.linear_model.LinearRegression` |
+| matplotlib | 作图 | 生成散点拟合图和残差图 |
 
-## 待补充来源
+## 发布前复核
 
-- 温度随高程变化这一地学背景需要补充教材或气候学资料来源。
-- 线性回归基础定义需要补充统计学教材或 scikit-learn 文档来源。
+本期初稿暂无未处理的来源缺口。正式发布前仍需复核所有外部链接是否可访问。

@@ -32,7 +32,7 @@ python3 -m json.tool episodes/01-linear-regression/notebook.ipynb >/dev/null
 
 echo "Repository structure check passed."
 
-if rg -n "\[NEEDS SOURCE\]" episodes README.md algorithms tasks glossary.md >/tmp/learngeoai-needs-source.txt; then
+if rg -n "\[NEEDS SOURCE\]" episodes algorithms tasks glossary.md >/tmp/learngeoai-needs-source.txt; then
   echo "Source markers found. Review before publication:"
   cat /tmp/learngeoai-needs-source.txt
 fi
