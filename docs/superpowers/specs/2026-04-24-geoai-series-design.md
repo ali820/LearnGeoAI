@@ -1,62 +1,64 @@
-# GeoAI Algorithm Series Design
+# GeoAI 算法连载设计
 
-## Purpose
+## 目标
 
-Build a serialized WeChat Official Account column on classic GeoAI algorithms, paired with a GitHub knowledge base that preserves reusable notes, code, figures, and references. The series will progress from statistical methods to machine learning, deep learning, foundation models, and large-model methods, while each episode is anchored in a concrete geoscience task.
+建设一个面向微信公众号的“经典地学人工智能算法”连载，同时配套一个 GitHub 知识库，用来长期保存文章、代码、图件、参考资料和可复现实验。连载主线从统计学方法开始，逐步推进到机器学习、深度学习、基础模型和最新大模型方法；每一期都用一个具体地学任务承载算法讲解。
 
-## Audience
+## 读者定位
 
-The primary audience is graduate students and early-career researchers in geography, remote sensing, GIS, environmental science, ecology, urban studies, hazards, and related fields. They are assumed to understand geoscience problems but may have uneven training in statistics, machine learning, and deep learning.
+主要读者是地理学、遥感、GIS、环境科学、生态、城市、灾害等相关方向的研究生和科研入门者。他们通常理解地学问题，但统计学、机器学习和深度学习基础可能不均衡。
 
-## Editorial Positioning
+## 栏目定位
 
-The series should be readable as a WeChat article and reusable as a GitHub learning resource. Each article should explain why the algorithm matters for geoscience, build intuition before formulas, and then show a minimal but meaningful Python implementation. Claims about algorithm history, benchmark performance, datasets, or state-of-the-art status must be cited or marked as `[NEEDS SOURCE]`.
+连载需要同时满足两个目标：微信公众号端要可读、易懂、图文并茂；GitHub 端要可查、可跑、可复用。每篇文章先解释算法为什么对地学问题有用，再讲算法直觉，然后给出必要公式、流程图、Python 示例和适用边界。
 
-## Organization
+涉及算法历史、基准性能、数据集、最新进展或“效果最好”等判断时，必须给出可靠来源；如果暂时没有来源，标记为 `[NEEDS SOURCE]`。
 
-Use a hybrid structure:
+## 组织方式
 
-- The overall series follows algorithmic development: statistics, machine learning, deep learning, foundation models, and large models.
-- Each episode uses one geoscience task to make the algorithm concrete.
-- GitHub maintains both episode order and cross-cutting indexes by algorithm family and task type.
+采用混合结构：
 
-This structure keeps the learning path systematic while making each WeChat article problem-driven and readable.
+- 总体连载按算法发展脉络推进：统计学方法、机器学习、深度学习、基础模型和大模型。
+- 单篇文章围绕一个具体地学任务展开，让算法服务于真实问题。
+- GitHub 同时维护按期数排列的文章目录，以及按算法家族和地学任务组织的交叉索引。
 
-## Episode Template
+这种结构可以保留系统学习路径，同时让每篇公众号文章更问题导向、更容易阅读。
 
-Each episode should follow a stable structure:
+## 单篇模板
 
-1. Geoscience problem: introduce the practical task, data type, and why the method is useful.
-2. Algorithm intuition: explain the method with plain language and diagrams.
-3. Core formulation: include only the formulas needed to understand the method.
-4. Workflow figure: show inputs, model logic, outputs, and interpretation.
-5. Python example: provide a small reproducible example in the GitHub repository.
-6. Geoscience interpretation: connect model output to domain meaning.
-7. Applicability and limits: explain assumptions, failure modes, and uncertainty.
-8. Further reading: include references and source links; unsupported claims are marked `[NEEDS SOURCE]`.
+每一期采用稳定结构：
 
-## First Season Scope
+1. 地学问题：介绍实际任务、数据类型，以及为什么需要这个算法。
+2. 算法直觉：用通俗语言和图解说明核心思想。
+3. 核心公式：只保留理解算法所必需的公式。
+4. 流程图：展示输入数据、模型逻辑、输出结果和解释方式。
+5. Python 示例：在 GitHub 中提供一个小而完整的可复现实例。
+6. 地学解释：把模型输出转化为领域含义。
+7. 适用边界：说明假设、失效场景、不确定性和常见误用。
+8. 延伸阅读：列出参考文献和资料链接；未支撑的重要说法标记为 `[NEEDS SOURCE]`。
 
-The first season covers statistical methods and traditional machine learning. Proposed episodes:
+## 第一季范围
 
-1. Linear regression: temperature-elevation relationships.
-2. Logistic regression: landslide susceptibility or binary hazard mapping.
-3. Principal component analysis: dimensionality reduction for multi-source environmental variables.
-4. Kriging: spatial interpolation and spatial autocorrelation.
-5. Time-series decomposition or ARIMA: climate trend and seasonality analysis.
-6. Bayesian methods: uncertainty expression in geoscience inference.
-7. K-nearest neighbors: similar-region retrieval or simple spatial classification.
-8. K-means clustering: unsupervised grouping of land-surface or environmental regimes.
-9. Decision trees: interpretable rule-based classification.
-10. Random forests: land-cover classification or environmental variable importance.
-11. Support vector machines: small-sample remote-sensing classification.
-12. GBDT/XGBoost: ecological, environmental, or hazard risk modeling.
+第一季覆盖统计学方法和传统机器学习。建议 12 期如下：
 
-The exact geoscience case for each episode can be adjusted when drafting, depending on available open data and figure/code feasibility.
+1. 线性回归：温度与高程关系。
+2. Logistic 回归：滑坡易发性或二分类灾害制图。
+3. 主成分分析：多源环境变量降维。
+4. Kriging：空间插值与空间自相关。
+5. 时间序列分解或 ARIMA：气候趋势与季节性分析。
+6. 贝叶斯方法：地学推断中的不确定性表达。
+7. K 近邻：相似区域检索或简单空间分类。
+8. K-means 聚类：地表类型或环境区划的无监督分组。
+9. 决策树：可解释的规则分类。
+10. 随机森林：土地覆盖分类或环境变量重要性分析。
+11. 支持向量机：小样本遥感分类。
+12. GBDT/XGBoost：生态、环境或灾害风险建模。
 
-## GitHub Repository Model
+每期具体地学案例可以在正式写作时根据开放数据、图件可做性和代码复杂度微调。
 
-The repository should support both reading and reuse. Recommended structure:
+## GitHub 仓库结构
+
+仓库需要同时支持阅读和复用。建议结构如下：
 
 ```text
 LearnGeoAI/
@@ -81,50 +83,50 @@ LearnGeoAI/
   references.bib
 ```
 
-Episode folders are the main unit of work. `index.md` is the GitHub long-form version, `wechat.md` is the WeChat-ready version, `notebook.ipynb` contains runnable code, `figures/` stores article figures, and `references.md` records sources used by that episode.
+每一期是一个独立工作单元。`index.md` 是 GitHub 长文版，`wechat.md` 是公众号发布版，`notebook.ipynb` 保存可运行代码，`figures/` 保存文章图件，`references.md` 记录该期使用的资料来源。
 
-## Visual Style
+## 视觉风格
 
-The series should be visually rich but not decorative. Preferred visuals:
+连载应当图文并茂，但不做无意义装饰。优先使用以下图件：
 
-- Concept diagrams showing algorithm intuition.
-- Workflow diagrams mapping geoscience data to model outputs.
-- Simple plots generated from the example code.
-- Comparison tables for assumptions, strengths, and limitations.
+- 算法直觉图。
+- 地学数据到模型输出的流程图。
+- 示例代码生成的简单图表。
+- 算法假设、优点、局限的对比表。
 
-Figures should be simple enough for WeChat reading and traceable enough for GitHub reuse. If a figure is based on external data or a published result, the source must be cited.
+图件要适合公众号阅读，也要能在 GitHub 中追溯来源。如果图件基于外部数据或已有论文结果，必须标注来源。
 
-## Evidence Discipline
+## 证据纪律
 
-Do not invent citations, datasets, thresholds, results, or performance comparisons. When a claim needs support and the source is not yet available, mark it as `[NEEDS SOURCE]`. Distinguish:
+不得编造引用、数据集、阈值、结果或性能比较。需要支撑但暂时没有来源的说法，标记为 `[NEEDS SOURCE]`。写作时区分：
 
-- Observation: what the data or literature directly shows.
-- Interpretation: what the result likely means.
-- Mechanism: why a pattern may occur.
-- Implication: how the result may inform geoscience analysis.
+- 观察：数据或文献直接显示了什么。
+- 解释：结果可能意味着什么。
+- 机制：为什么可能出现这种模式。
+- 启示：这个结果对地学分析有什么帮助。
 
-Avoid strong causal language unless the method and evidence support it.
+除非方法和证据足以支持因果判断，否则避免强因果表述。
 
-## Production Workflow
+## 生产流程
 
-For each episode:
+每一期按以下流程推进：
 
-1. Choose the geoscience task and algorithm.
-2. Draft a concise outline for WeChat and GitHub.
-3. Identify needed references and open data, or mark gaps as `[NEEDS SOURCE]`.
-4. Create the GitHub episode folder.
-5. Write the GitHub `index.md` first as the source version.
-6. Derive `wechat.md` from `index.md` with a more readable narrative and shorter code excerpts.
-7. Add notebook code and generated figures.
-8. Run the notebook or code checks before publication.
-9. Publish to WeChat and link back to the GitHub episode.
+1. 确定地学任务和算法。
+2. 同时拟定公众号版和 GitHub 版的大纲。
+3. 查找必要参考资料和开放数据；缺口标记为 `[NEEDS SOURCE]`。
+4. 创建 GitHub 期目文件夹。
+5. 先写 `index.md`，作为完整源稿。
+6. 从 `index.md` 派生 `wechat.md`，压缩代码、强化叙事和图文节奏。
+7. 添加 notebook 代码和生成图件。
+8. 发布前运行 notebook 或代码检查。
+9. 公众号发布后，在文末链接 GitHub 对应期目。
 
-## Success Criteria
+## 成功标准
 
-The design is successful if each episode can be read independently on WeChat, reproduced or extended from GitHub, and later indexed into a larger GeoAI learning map. The first milestone is a complete first episode with article text, figures, references, and runnable code.
+每一期都应能在微信公众号中独立阅读，也能在 GitHub 中复现、扩展和长期检索。第一阶段目标是完成第一期：包括文章正文、图件、参考资料和可运行代码。
 
-## Next Decisions
+## 下一步决策
 
-- Confirm whether the first episode should remain linear regression or use a stronger opening topic.
-- Select open datasets per episode based on openness, simplicity, and relevance.
-- Define a lightweight reusable visual template before drafting the first article.
+- 确认第一期是否仍从线性回归开始，还是选择更有传播力的开篇主题。
+- 为每一期选择开放、简单、地学相关性强的数据集。
+- 在正式写第一篇前，确定一个轻量级、可复用的视觉模板。
