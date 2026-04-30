@@ -11,6 +11,11 @@ required_files=(
   "episodes/01-linear-regression/references.md"
   "episodes/01-linear-regression/data/README.md"
   "episodes/01-linear-regression/notebook.ipynb"
+  "episodes/02-logistic-regression/index.md"
+  "episodes/02-logistic-regression/wechat.md"
+  "episodes/02-logistic-regression/references.md"
+  "episodes/02-logistic-regression/data/README.md"
+  "episodes/02-logistic-regression/notebook.ipynb"
   "algorithms/regression.md"
   "algorithms/classification.md"
   "algorithms/spatial-statistics.md"
@@ -29,6 +34,7 @@ for path in "${required_files[@]}"; do
 done
 
 python3 -m json.tool episodes/01-linear-regression/notebook.ipynb >/dev/null
+python3 -m json.tool episodes/02-logistic-regression/notebook.ipynb >/dev/null
 
 echo "Repository structure check passed."
 
