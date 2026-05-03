@@ -12,9 +12,8 @@
 | --- | --- | --- |
 | scikit-learn `LogisticRegression` documentation | 说明 `LogisticRegression` 的参数、方法和数学原理 | https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html |
 | scikit-learn User Guide: Logistic regression | 解释 Logistic 回归的 L1/L2 正则化、多分类扩展等 | https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression |
-| Wikipedia: Logistic function | Sigmoid 函数的数学定义和性质 | https://en.wikipedia.org/wiki/Logistic_function |
-| Wikipedia: Receiver operating characteristic | ROC 曲线和 AUC 的定义与解释 | https://en.wikipedia.org/wiki/Receiver_operating_characteristic |
 | USGS Landslide Hazards Program | 滑坡灾害背景知识和研究方法介绍 | https://www.usgs.gov/programs/landslide-hazards |
+| Fawcett, T. (2006). An introduction to ROC analysis. Pattern Recognition Letters, 27(8), 861-874. | ROC 曲线和 AUC 的统计学解释 | https://doi.org/10.1016/j.patrec.2005.10.010 |
 
 ## 本期使用的软件
 
@@ -25,7 +24,6 @@
 | numpy | 数值计算 | Sigmoid 函数实现 |
 | scikit-learn | Logistic 回归建模 | 使用 `sklearn.linear_model.LogisticRegression` |
 | matplotlib | 作图 | 生成 Sigmoid 曲线、混淆矩阵、ROC 曲线等 |
-| seaborn | 统计可视化 | 辅助绑图 |
 
 ## 延伸阅读
 
@@ -33,16 +31,15 @@
 
 | 文献/资料 | 内容 |
 | --- | --- |
-| Reichenbach et al. (2018) A review of statistically-based landslide susceptibility models | 滑坡易发性建模方法的系统综述 |
-| Guzzetti et al. (2005) Landslide hazard assessment | 滑坡危险性评价方法综述 |
-| 中国地质调查局地质灾害调查规范 | 国内滑坡调查和评价的技术规范 |
+| Reichenbach, P., Rossi, M., Malamud, B. D., Mihir, M., & Guzzetti, F. (2018). A review of statistically-based landslide susceptibility models. Earth-Science Reviews, 180, 60-91. | 滑坡易发性建模方法的系统综述 |
+| Guzzetti, F., Reichenbach, P., Cardinali, M., Galli, M., & Ardizzone, F. (2005). Probabilistic landslide hazard assessment at the basin scale. Geomorphology, 72(1-4), 272-299. | 滑坡危险性评价方法案例 |
 
 ### 分类模型评估
 
 | 文献/资料 | 内容 |
 | --- | --- |
-| Fawcett (2006) An introduction to ROC analysis | ROC 分析的经典教程 |
-| Powers (2011) Evaluation: from precision, recall and F-measure to ROC | 分类评估指标的全面介绍 |
+| Fawcett, T. (2006). An introduction to ROC analysis. Pattern Recognition Letters, 27(8), 861-874. | ROC 分析的经典教程 |
+| Powers, D. M. W. (2011). Evaluation: From precision, recall and F-measure to ROC, informedness, markedness and correlation. Journal of Machine Learning Technologies, 2(1), 37-63. | 分类评估指标的全面介绍 |
 
 ### 样本不平衡处理
 
@@ -54,8 +51,8 @@
 
 ## 发布前复核
 
-本期数据为教学构造数据，不需要外部数据许可证。正式发布前仍需复核：
+本期数据为教学构造数据，不需要外部数据许可证。已完成复核：
 
-- [ ] 所有外部链接是否可访问
-- [ ] 图件是否已生成并放置在 figures/ 目录
-- [ ] notebook 是否可完整运行
+- 外部链接已补充为官方文档、USGS 页面和带 DOI 的文献链接。
+- 图件已生成并放置在 `figures/` 目录。
+- notebook 已在本地执行通过。
