@@ -65,6 +65,7 @@ scripts/       仓库检查脚本
 - 第一期开篇方向：线性回归与温度-高程关系。
 - 第一期资料入口：[episodes/01-linear-regression](episodes/01-linear-regression/)
 - 第二期资料入口：[episodes/02-logistic-regression](episodes/02-logistic-regression/)
+- 第三期资料入口：[episodes/03-pca](episodes/03-pca/)
 - 写作模板入口：[templates](templates/)
 
 ## 使用方式

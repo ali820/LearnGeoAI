@@ -16,8 +16,14 @@ required_files=(
   "episodes/02-logistic-regression/references.md"
   "episodes/02-logistic-regression/data/README.md"
   "episodes/02-logistic-regression/notebook.ipynb"
+  "episodes/03-pca/index.md"
+  "episodes/03-pca/wechat.md"
+  "episodes/03-pca/references.md"
+  "episodes/03-pca/data/README.md"
+  "episodes/03-pca/notebook.ipynb"
   "algorithms/regression.md"
   "algorithms/classification.md"
+  "algorithms/dimensionality-reduction.md"
   "algorithms/spatial-statistics.md"
   "tasks/landslide-susceptibility.md"
   "tasks/land-cover-classification.md"
@@ -35,6 +41,7 @@ done
 
 python3 -m json.tool episodes/01-linear-regression/notebook.ipynb >/dev/null
 python3 -m json.tool episodes/02-logistic-regression/notebook.ipynb >/dev/null
+python3 -m json.tool episodes/03-pca/notebook.ipynb >/dev/null
 
 MPLBACKEND=Agg python3 - <<'PY'
 import json
@@ -45,6 +52,7 @@ from pathlib import Path
 for notebook_path in [
     Path("episodes/01-linear-regression/notebook.ipynb"),
     Path("episodes/02-logistic-regression/notebook.ipynb"),
+    Path("episodes/03-pca/notebook.ipynb"),
 ]:
     notebook = json.loads(notebook_path.read_text())
     namespace = {"__name__": "__main__"}
